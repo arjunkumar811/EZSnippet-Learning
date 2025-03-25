@@ -1,1 +1,0 @@
-![alt text](Day-1-1.jpg)

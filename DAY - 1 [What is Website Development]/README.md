@@ -1,4 +1,3 @@
-Here's a **README.md** file based on the image content:  
 
 ---
 
