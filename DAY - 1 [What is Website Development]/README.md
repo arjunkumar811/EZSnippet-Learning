@@ -8,7 +8,7 @@ Web development is the process of creating and building websites. It involves:
 - **Designing**  
 - **Adding functionalities** (buttons, forms, etc.)  
 
-**Example** – Building a house 🏠  
+**Example** – Building a house  
 
 ---  
 
