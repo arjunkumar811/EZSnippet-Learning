@@ -15,7 +15,7 @@ Web development is the process of creating and building websites. It involves:
 #### 2️⃣ **What is Code?**  
 Code is like a **special language** that we use to tell computers what to do.  
 
-**Example** – Recipe 🍲  
+**Example** – Recipe 
 
 ---  
 
