@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Learning HTML document structure and semantic elements - Day 6 of EZsnipet tutorial"
+    />
+    <meta
+      name="keywords"
+      content="HTML, structure, semantic, web development, tutorial"
+    />
+    <meta name="author" content="EZsnipet Tutorial Series" />
+    <title>HTML Document Structure - Day 6</title>
+  </head>
+  <body>
+    <!-- Page Header -->
+    <header>
+      <h1>Understanding HTML Document Structure</h1>
+      <nav>
+        <ul>
+          <li><a href="#introduction">Introduction</a></li>
+          <li><a href="#semantic-elements">Semantic Elements</a></li>
+          <li><a href="#best-practices">Best Practices</a></li>
+          <li><a href="#examples">Examples</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+      <!-- Introduction Section -->
+      <section id="introduction">
+        <h2>What is HTML Document Structure?</h2>
+        <p>
+          HTML document structure refers to the way we organize and arrange
+          elements within an HTML document. A well-structured document is like a
+          well-organized building - everything has its proper place and purpose.
+        </p>
+
+        <p>
+          Think of HTML structure as the skeleton of your webpage. Just as our
+          body's skeleton provides framework and support, HTML structure
+          provides the foundation that holds all your content together in a
+          logical, accessible way.
+        </p>
+
+        <article>
+          <h3>The Importance of Structure</h3>
+          <p>Proper HTML structure is crucial for several reasons:</p>
+          <ul>
+            <li>
+              <strong>Accessibility:</strong> Screen readers and assistive
+              technologies rely on proper structure to navigate content
+            </li>
+            <li>
+              <strong>SEO:</strong> Search engines understand and rank
+              well-structured content better
+            </li>
+            <li>
+              <strong>Maintainability:</strong> Organized code is easier to
+              update and debug
+            </li>
+            <li>
+              <strong>Performance:</strong> Browsers can render structured
+              content more efficiently
+            </li>
+          </ul>
+        </article>
+      </section>
+
+      <!-- Semantic Elements Section -->
+      <section id="semantic-elements">
+        <h2>Semantic HTML Elements</h2>
+        <p>
+          Semantic elements clearly describe their meaning to both the browser
+          and the developer. Instead of using generic
+          <code>&lt;div&gt;</code> elements everywhere, we use meaningful tags
+          that describe the content's purpose.
+        </p>
+
+        <article>
+          <h3>Key Semantic Elements</h3>
+
+          <h4>Document Structure Elements</h4>
+          <p>These elements define the main sections of your document:</p>
+          <ul>
+            <li>
+              <code>&lt;header&gt;</code> - Contains introductory content or
+              navigation
+            </li>
+            <li>
+              <code>&lt;main&gt;</code> - Represents the primary content of the
+              page
+            </li>
+            <li>
+              <code>&lt;footer&gt;</code> - Contains footer information like
+              copyright or contact details
+            </li>
+          </ul>
+
+          <h4>Content Grouping Elements</h4>
+          <p>These elements help organize your content into logical groups:</p>
+          <ul>
+            <li>
+              <code>&lt;section&gt;</code> - Groups related content together
+            </li>
+            <li>
+              <code>&lt;article&gt;</code> - Represents standalone, reusable
+              content
+            </li>
+            <li>
+              <code>&lt;aside&gt;</code> - Contains content related to the main
+              content
+            </li>
+            <li><code>&lt;nav&gt;</code> - Defines navigation links</li>
+          </ul>
+        </article>
+      </section>
+
+      <!-- Best Practices Section -->
+      <section id="best-practices">
+        <h2>Structure Best Practices</h2>
+
+        <article>
+          <h3>Heading Hierarchy</h3>
+          <p>
+            Use headings (h1-h6) to create a clear content hierarchy. Think of
+            them as the outline of a book:
+          </p>
+          <ul>
+            <li>
+              <strong>h1:</strong> Main page title (use only one per page)
+            </li>
+            <li><strong>h2:</strong> Major section headings</li>
+            <li><strong>h3:</strong> Subsection headings</li>
+            <li><strong>h4-h6:</strong> Further subdivisions as needed</li>
+          </ul>
+        </article>
+
+        <article>
+          <h3>Semantic Over Style</h3>
+          <p>
+            Choose HTML elements based on meaning, not appearance. For example:
+          </p>
+          <ul>
+            <li>
+              Use <code>&lt;strong&gt;</code> for important text, not just bold
+              formatting
+            </li>
+            <li>
+              Use <code>&lt;em&gt;</code> for emphasized text, not just italics
+            </li>
+            <li>Use appropriate heading levels for content hierarchy</li>
+          </ul>
+        </article>
+      </section>
+
+      <!-- Examples Section -->
+      <section id="examples">
+        <h2>Structure Examples</h2>
+
+        <article>
+          <h3>Before and After</h3>
+
+          <h4>❌ Poor Structure Example</h4>
+          <p>
+            This example shows non-semantic HTML that's harder to understand and
+            maintain:
+          </p>
+          <pre><code>&lt;div class="header"&gt;
+    &lt;div class="title"&gt;My Website&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="content"&gt;
+    &lt;div class="post"&gt;Blog post content&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+
+          <h4>✅ Good Structure Example</h4>
+          <p>
+            This example shows semantic HTML that clearly communicates the
+            content's purpose:
+          </p>
+          <pre><code>&lt;header&gt;
+    &lt;h1&gt;My Website&lt;/h1&gt;
+&lt;/header&gt;
+&lt;main&gt;
+    &lt;article&gt;
+        &lt;h2&gt;Blog Post Title&lt;/h2&gt;
+        &lt;p&gt;Blog post content&lt;/p&gt;
+    &lt;/article&gt;
+&lt;/main&gt;</code></pre>
+        </article>
+      </section>
+    </main>
+
+    <!-- Sidebar Content -->
+    <aside>
+      <h3>Quick Reference</h3>
+      <p>Remember these key points:</p>
+      <ul>
+        <li>Always start with proper DOCTYPE</li>
+        <li>Include essential meta tags</li>
+        <li>Use semantic elements</li>
+        <li>Follow heading hierarchy</li>
+        <li>Validate your HTML</li>
+      </ul>
+
+      <h3>Next Steps</h3>
+      <p>In the next lesson, we'll learn about:</p>
+      <ul>
+        <li>CSS styling and layout</li>
+        <li>Responsive design principles</li>
+        <li>Advanced HTML forms</li>
+      </ul>
+    </aside>
+
+    <!-- Page Footer -->
+    <footer>
+      <p>
+        &copy; 2025 EZsnipet Tutorial Series. Created for educational purposes.
+      </p>
+      <p>
+        <small>
+          This webpage demonstrates proper HTML document structure using
+          semantic elements.
+          <time datetime="2025-05-27">Last updated: May 27, 2025</time>
+        </small>
+      </p>
+      <nav>
+        <a href="#introduction">Back to Top</a> |
+        <a href="../DAY - 5 [First Webpage]/index.html">Previous Lesson</a> |
+        <a href="../DAY - 7 [CSS Basics]/index.html">Next Lesson</a>
+      </nav>
+    </footer>
+  </body>
+</html>
