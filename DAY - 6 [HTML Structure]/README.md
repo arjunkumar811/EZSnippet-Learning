@@ -220,3 +220,4 @@ Let's create a properly structured HTML document that follows best practices and
 Remember: Good structure is the foundation of great websites! 🏗️
 
 ---
+Day _ 7 is comming soon
