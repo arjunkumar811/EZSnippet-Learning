@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Comprehensive guide to HTML text elements and formatting - Day 7 of EZsnipet tutorial"
+    />
+    <meta
+      name="keywords"
+      content="HTML, text formatting, semantic markup, accessibility, web development"
+    />
+    <meta name="author" content="EZsnipet Tutorial Series" />
+    <title>HTML Text Elements Demo - Day 7</title>
+  </head>
+  <body>
+    <header>
+      <h1>HTML Text Elements in Action</h1>
+      <nav>
+        <ul>
+          <li><a href="#basic-formatting">Basic Formatting</a></li>
+          <li><a href="#specialized-text">Specialized Text</a></li>
+          <li><a href="#quotations">Quotations</a></li>
+          <li><a href="#special-characters">Special Characters</a></li>
+          <li><a href="#text-structure">Text Structure</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <!-- Basic Text Formatting Section -->
+      <section id="basic-formatting">
+        <h2>Basic Text Formatting</h2>
+
+        <article>
+          <h3>Emphasis and Importance</h3>
+          <p>
+            This paragraph demonstrates <strong>strong importance</strong> and
+            <em>emphasized text</em>. Notice how <strong>strong</strong> conveys
+            importance while <em>emphasis</em> provides stress or alternative
+            voice tone.
+          </p>
+
+          <p>
+            For comparison, here's <b>bold text</b> and <i>italic text</i> which
+            are presentational only. The semantic versions (<strong
+              >strong</strong
+            >
+            and <em>emphasis</em>) are preferred because they convey meaning to
+            screen readers and search engines.
+          </p>
+
+          <p>
+            Sometimes you might need <u>underlined text</u>, but be careful as
+            users expect underlined text to be links!
+          </p>
+        </article>
+
+        <article>
+          <h3>Superscript and Subscript</h3>
+          <p>
+            Mathematical expressions: E = mc<sup>2</sup> (Einstein's famous
+            equation)
+          </p>
+          <p>
+            Chemical formulas: H<sub>2</sub>O (water), CO<sub>2</sub> (carbon
+            dioxide)
+          </p>
+          <p>Footnotes: This statement needs a reference<sup>1</sup></p>
+          <p>
+            Ordinal numbers: 1<sup>st</sup>, 2<sup>nd</sup>, 3<sup>rd</sup>
+            place winners
+          </p>
+        </article>
+      </section>
+
+      <!-- Specialized Text Elements Section -->
+      <section id="specialized-text">
+        <h2>Specialized Text Elements</h2>
+
+        <article>
+          <h3>Code and Programming</h3>
+          <p>
+            To create a paragraph in HTML, use the <code>&lt;p&gt;</code> tag.
+            The <code>class</code> attribute allows you to assign CSS classes to
+            elements.
+          </p>
+
+          <p>Here's a simple JavaScript function:</p>
+          <pre><code>function greetUser(name) {
+    console.log("Hello, " + name + "!");
+    return "Welcome to our website!";
+}</code></pre>
+
+          <p>
+            To run this code, press <kbd>F12</kbd> to open developer tools, then
+            press <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>I</kbd> (or
+            <kbd>Cmd</kbd> + <kbd>Option</kbd> + <kbd>I</kbd> on Mac).
+          </p>
+
+          <p>
+            If you see an error message like
+            <samp>TypeError: Cannot read property 'name' of undefined</samp>,
+            check that you've defined the <var>name</var> variable correctly.
+          </p>
+        </article>
+
+        <article>
+          <h3>Abbreviations and Definitions</h3>
+          <p>
+            The <abbr title="World Wide Web Consortium">W3C</abbr> sets web
+            standards. <abbr title="Cascading Style Sheets">CSS</abbr> is used
+            for styling, while
+            <abbr title="Application Programming Interface">API</abbr> allows
+            different software to communicate.
+          </p>
+
+          <p>
+            <dfn>Semantic HTML</dfn> refers to using HTML elements according to
+            their intended meaning rather than their appearance. A
+            <dfn>web browser</dfn> is software that retrieves and displays web
+            content.
+          </p>
+        </article>
+
+        <article>
+          <h3>Text Modifications</h3>
+          <p>
+            The original price was <del>$99.99</del> but now it's only
+            <ins>$79.99</ins>!
+          </p>
+          <p>
+            My favorite programming language used to be
+            <del datetime="2024-01-15">Python</del> but now it's
+            <ins datetime="2025-05-28">JavaScript</ins>.
+          </p>
+
+          <p>
+            Don't forget to <mark>submit your assignment</mark> before the
+            deadline!
+          </p>
+          <p>
+            Search results for "<mark>HTML tutorial</mark>" - 1,234 results
+            found.
+          </p>
+        </article>
+      </section>
+
+      <!-- Quotations Section -->
+      <section id="quotations">
+        <h2>Quotations and Citations</h2>
+
+        <article>
+          <h3>Inline Quotations</h3>
+          <p>
+            As Tim Berners-Lee once said,
+            <q>The Web is more a social creation than a technical one.</q> This
+            perfectly captures the collaborative nature of web development.
+          </p>
+
+          <p>
+            The documentation states that
+            <q>semantic elements provide meaning to content structure</q>, which
+            is why we prefer them over presentational markup.
+          </p>
+        </article>
+
+        <article>
+          <h3>Block Quotations</h3>
+          <blockquote>
+            <p>
+              The only way to do great work is to love what you do. If you
+              haven't found it yet, keep looking. Don't settle.
+            </p>
+            <cite>— Steve Jobs, Stanford Commencement Address, 2005</cite>
+          </blockquote>
+
+          <blockquote>
+            <p>
+              Web accessibility is not just about removing barriers for people
+              with disabilities. It's about removing barriers for everyone and
+              creating inclusive experiences that benefit all users.
+            </p>
+            <cite>— Web Content Accessibility Guidelines (WCAG)</cite>
+          </blockquote>
+        </article>
+
+        <article>
+          <h3>Citations and References</h3>
+          <p>
+            According to <cite>Eloquent JavaScript</cite> by Marijn Haverbeke,
+            understanding the fundamentals is crucial for becoming a skilled
+            programmer.
+          </p>
+
+          <p>
+            The principles outlined in <cite>Don't Make Me Think</cite> by Steve
+            Krug emphasize the importance of intuitive web design.
+          </p>
+        </article>
+      </section>
+
+      <!-- Special Characters Section -->
+      <section id="special-characters">
+        <h2>Special Characters and Entities</h2>
+
+        <article>
+          <h3>HTML Reserved Characters</h3>
+          <p>
+            To display HTML tags in text, you need to use entities:
+            &lt;strong&gt; becomes <code>&amp;lt;strong&amp;gt;</code>
+          </p>
+
+          <p>
+            The ampersand (&amp;) symbol must be written as
+            <code>&amp;amp;</code> in HTML.
+          </p>
+
+          <p>
+            Quotation marks in attributes:
+            <code>&lt;p class=&quot;example&quot;&gt;</code>
+          </p>
+        </article>
+
+        <article>
+          <h3>Copyright and Trademark Symbols</h3>
+          <p>&copy; 2025 EZsnipet Tutorial Series. All rights reserved.</p>
+          <p>
+            HTML5&trade; is a trademark of the
+            <abbr title="World Wide Web Consortium">W3C</abbr>.
+          </p>
+          <p>
+            Visual Studio Code&reg; is a registered trademark of Microsoft
+            Corporation.
+          </p>
+        </article>
+
+        <article>
+          <h3>Spacing and Special Characters</h3>
+          <p>
+            Use non-breaking spaces to keep related items together:
+            $29&nbsp;USD, 10:30&nbsp;AM, Chapter&nbsp;7
+          </p>
+
+          <p>
+            Mathematical symbols: 2 &times; 3 = 6, 10 &divide; 2 = 5, &plusmn; 5
+            degrees
+          </p>
+
+          <p>
+            Currency symbols: $29 USD, &euro;25 EUR, &pound;20 GBP, &yen;3000
+            JPY
+          </p>
+        </article>
+      </section>
+
+      <!-- Text Structure Section -->
+      <section id="text-structure">
+        <h2>Text Structure and Organization</h2>
+
+        <article>
+          <h3>Proper List Usage</h3>
+
+          <h4>Benefits of Semantic HTML (Unordered List)</h4>
+          <ul>
+            <li>
+              <strong>Accessibility:</strong> Screen readers can navigate
+              content more effectively
+            </li>
+            <li>
+              <strong>SEO Benefits:</strong> Search engines better understand
+              content structure
+            </li>
+            <li>
+              <strong>Maintainability:</strong> Code is easier to update and
+              debug
+            </li>
+            <li>
+              <strong>Future-proof:</strong> Works across different devices and
+              browsers
+            </li>
+          </ul>
+
+          <h4>Steps to Create Good HTML (Ordered List)</h4>
+          <ol>
+            <li>Plan your content structure first</li>
+            <li>Choose semantic elements based on meaning</li>
+            <li>Write clean, well-indented code</li>
+            <li>Test with various browsers and devices</li>
+            <li>Validate your HTML for errors</li>
+            <li>Test accessibility with screen readers</li>
+          </ol>
+
+          <h4>HTML Terminology (Definition List)</h4>
+          <dl>
+            <dt>Element</dt>
+            <dd>
+              An HTML component defined by tags, such as &lt;p&gt; or
+              &lt;div&gt;
+            </dd>
+
+            <dt>Attribute</dt>
+            <dd>
+              Properties that provide additional information about elements
+            </dd>
+
+            <dt>Tag</dt>
+            <dd>The markup that defines the beginning and end of an element</dd>
+
+            <dt>Semantic HTML</dt>
+            <dd>
+              Using HTML elements according to their intended meaning and
+              purpose
+            </dd>
+          </dl>
+        </article>
+
+        <article>
+          <h3>International Content</h3>
+          <p>HTML supports international content. For example:</p>
+          <ul>
+            <li>
+              French: <span lang="fr">Bonjour le monde!</span> (Hello world!)
+            </li>
+            <li>Spanish: <span lang="es">¡Hola mundo!</span> (Hello world!)</li>
+            <li>German: <span lang="de">Hallo Welt!</span> (Hello world!)</li>
+            <li>
+              Japanese: <span lang="ja">こんにちは世界！</span> (Hello world!)
+            </li>
+          </ul>
+          <p>
+            Using the <code>lang</code> attribute helps screen readers pronounce
+            content correctly.
+          </p>
+        </article>
+      </section>
+    </main>
+
+    <aside>
+      <h3>Quick Tips</h3>
+      <ul>
+        <li>
+          Always choose <strong>semantic</strong> over presentational elements
+        </li>
+        <li>Use <mark>entities</mark> for special characters</li>
+        <li>Test your content with <em>screen readers</em></li>
+        <li>Keep paragraphs <strong>focused</strong> and readable</li>
+      </ul>
+
+      <h3>Remember</h3>
+      <blockquote>
+        <p>
+          Good HTML text formatting creates content that is accessible,
+          meaningful, and easy to maintain.
+        </p>
+      </blockquote>
+    </aside>
+
+    <footer>
+      <hr />
+      <p>
+        &copy; 2025 EZsnipet Tutorial Series. Created for educational purposes.
+      </p>
+      <p>
+        <small>
+          This demonstration page shows various HTML text elements in action.
+          <time datetime="2025-05-28">Last updated: May 28, 2025</time>
+        </small>
+      </p>
+      <nav>
+        <a href="#basic-formatting">Back to Top</a> |
+        <a href="../DAY - 6 [HTML Structure]/index.html">Previous Lesson</a> |
+        <a href="../DAY - 8 [CSS Basics]/index.html">Next Lesson</a>
+      </nav>
+    </footer>
+  </body>
+</html>
