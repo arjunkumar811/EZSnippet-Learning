@@ -371,4 +371,5 @@ After mastering HTML text, you'll be ready for:
 
 Let's create beautiful, accessible, and semantic text content that works perfectly for all users! Remember: good text formatting is the foundation of excellent web content! 📝✨
 
+day 8 is comming soon
 ---
