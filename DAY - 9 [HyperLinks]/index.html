@@ -1,0 +1,950 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Comprehensive guide to HTML hyperlinks - internal, external, anchor, email, and phone links - Day 9 of EZsnipet tutorial"
+    />
+    <meta
+      name="keywords"
+      content="HTML, links, hyperlinks, navigation, anchor, href, web development, tutorial"
+    />
+    <meta name="author" content="EZsnipet Tutorial Series" />
+    <title>HTML HyperLinks Mastery - Day 9</title>
+    <style>
+      /* Basic styling for better demonstration */
+      body {
+        font-family: Arial, sans-serif;
+        line-height: 1.6;
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 20px;
+      }
+      .skip-link {
+        position: absolute;
+        top: -40px;
+        left: 6px;
+        background: #000;
+        color: #fff;
+        padding: 8px;
+        text-decoration: none;
+        z-index: 1000;
+      }
+      .skip-link:focus {
+        top: 6px;
+      }
+      nav ul {
+        list-style: none;
+        display: flex;
+        gap: 20px;
+        background: #f4f4f4;
+        padding: 15px;
+        border-radius: 8px;
+      }
+      nav ul li a {
+        text-decoration: none;
+        color: #333;
+        padding: 10px 15px;
+        border-radius: 4px;
+        transition: background-color 0.3s;
+      }
+      nav ul li a:hover {
+        background-color: #ddd;
+      }
+      .button-link {
+        display: inline-block;
+        background-color: #007bff;
+        color: white;
+        padding: 12px 24px;
+        text-decoration: none;
+        border-radius: 5px;
+        transition: background-color 0.3s;
+      }
+      .button-link:hover {
+        background-color: #0056b3;
+      }
+      .external-icon::after {
+        content: " 🔗";
+        font-size: 0.8em;
+      }
+      .download-link::before {
+        content: "📥 ";
+      }
+      .email-link::before {
+        content: "📧 ";
+      }
+      .phone-link::before {
+        content: "📞 ";
+      }
+      section {
+        margin: 40px 0;
+        padding: 20px;
+        border-left: 4px solid #007bff;
+        background-color: #f8f9fa;
+      }
+      .breadcrumb {
+        background: #e9ecef;
+        padding: 10px 15px;
+        border-radius: 4px;
+        margin: 20px 0;
+      }
+      .breadcrumb ol {
+        list-style: none;
+        display: flex;
+        gap: 10px;
+        margin: 0;
+        padding: 0;
+      }
+      .breadcrumb li::after {
+        content: " > ";
+        margin-left: 10px;
+        color: #6c757d;
+      }
+      .breadcrumb li:last-child::after {
+        content: "";
+      }
+      .pagination {
+        display: flex;
+        gap: 10px;
+        justify-content: center;
+        margin: 30px 0;
+      }
+      .pagination a {
+        padding: 8px 12px;
+        border: 1px solid #ddd;
+        text-decoration: none;
+        color: #007bff;
+      }
+      .pagination a:hover {
+        background-color: #e9ecef;
+      }
+      .pagination a[aria-current="page"] {
+        background-color: #007bff;
+        color: white;
+        border-color: #007bff;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Skip link for accessibility -->
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
+    <header>
+      <h1>🔗 HTML HyperLinks: Connecting the Digital World</h1>
+
+      <!-- Main Navigation -->
+      <nav aria-label="Main navigation">
+        <ul>
+          <li>
+            <a href="#internal-links" aria-current="page">Internal Links</a>
+          </li>
+          <li><a href="#external-links">External Links</a></li>
+          <li><a href="#anchor-links">Anchor Links</a></li>
+          <li><a href="#special-links">Special Links</a></li>
+          <li><a href="#navigation-patterns">Navigation</a></li>
+          <li><a href="#accessibility">Accessibility</a></li>
+        </ul>
+      </nav>
+
+      <!-- Breadcrumb Navigation -->
+      <nav aria-label="Breadcrumb" class="breadcrumb">
+        <ol>
+          <li><a href="../">EZsnipet Tutorials</a></li>
+          <li><a href="../DAY - 8 [HTML List]/">Day 8 - Lists</a></li>
+          <li aria-current="page">Day 9 - HyperLinks</li>
+        </ol>
+      </nav>
+    </header>
+
+    <main id="main-content">
+      <!-- Internal Links Section -->
+      <section id="internal-links">
+        <h2>🏠 Internal Links</h2>
+        <p>
+          Internal links connect pages within your own website. They help users
+          navigate your site and improve SEO by creating a logical site
+          structure.
+        </p>
+
+        <article>
+          <h3>Relative Path Examples</h3>
+          <ul>
+            <li>
+              <a href="../DAY - 8 [HTML List]/index.html"
+                >Previous Lesson: HTML Lists</a
+              >
+            </li>
+            <li>
+              <a href="../DAY - 7 [HTML TEXT]/index.html"
+                >Day 7: HTML Text Elements</a
+              >
+            </li>
+            <li>
+              <a href="../DAY - 6 [HTML Structure]/index.html"
+                >Day 6: HTML Structure</a
+              >
+            </li>
+            <li>
+              <a href="../DAY - 5 [First Webpage]/index.html"
+                >Day 5: First Webpage</a
+              >
+            </li>
+          </ul>
+        </article>
+
+        <article>
+          <h3>Different File Types</h3>
+          <ul>
+            <li><a href="about.html">About Page (would be about.html)</a></li>
+            <li>
+              <a href="contact.html">Contact Form (would be contact.html)</a>
+            </li>
+            <li>
+              <a href="portfolio.html"
+                >Portfolio Gallery (would be portfolio.html)</a
+              >
+            </li>
+            <li><a href="blog.html">Blog Posts (would be blog.html)</a></li>
+          </ul>
+          <p>
+            <em
+              >Note: These are example links to demonstrate internal linking
+              patterns.</em
+            >
+          </p>
+        </article>
+
+        <article>
+          <h3>Navigation to Different Sections</h3>
+          <p>You can create multi-level navigation within your website:</p>
+          <ul>
+            <li>
+              <a href="products/index.html"
+                >Products Home (would be products/index.html)</a
+              >
+            </li>
+            <li>
+              <a href="products/smartphones.html"
+                >Smartphones (would be products/smartphones.html)</a
+              >
+            </li>
+            <li>
+              <a href="products/laptops.html"
+                >Laptops (would be products/laptops.html)</a
+              >
+            </li>
+            <li>
+              <a href="support/faq.html"
+                >FAQ Page (would be support/faq.html)</a
+              >
+            </li>
+          </ul>
+        </article>
+      </section>
+
+      <!-- External Links Section -->
+      <section id="external-links">
+        <h2>🌐 External Links</h2>
+        <p>
+          External links connect to other websites. Always use proper security
+          attributes and consider the user experience when linking externally.
+        </p>
+
+        <article>
+          <h3>Educational Resources</h3>
+          <ul>
+            <li>
+              <a
+                href="https://developer.mozilla.org/en-US/docs/Web/HTML"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="external-icon"
+                >MDN HTML Documentation</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://www.w3schools.com/html/"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="external-icon"
+                >W3Schools HTML Tutorial</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://html.spec.whatwg.org/"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="external-icon"
+                >HTML Living Standard</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://validator.w3.org/"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="external-icon"
+                >HTML Validator</a
+              >
+            </li>
+          </ul>
+        </article>
+
+        <article>
+          <h3>Development Tools</h3>
+          <ul>
+            <li>
+              <a
+                href="https://code.visualstudio.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="external-icon"
+                >Visual Studio Code</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://github.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="external-icon"
+                >GitHub</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://codepen.io/"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="external-icon"
+                >CodePen</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://stackoverflow.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="external-icon"
+                >Stack Overflow</a
+              >
+            </li>
+          </ul>
+        </article>
+
+        <article>
+          <h3>External Link Best Practices</h3>
+          <p>Notice how external links include:</p>
+          <ul>
+            <li><code>target="_blank"</code> - Opens in new tab</li>
+            <li>
+              <code>rel="noopener noreferrer"</code> - Security and privacy
+              protection
+            </li>
+            <li>Visual indicators (🔗 icon) to show they're external</li>
+            <li>Descriptive text explaining where the link goes</li>
+          </ul>
+        </article>
+      </section>
+
+      <!-- Anchor Links Section -->
+      <section id="anchor-links">
+        <h2>⚓ Anchor Links (Page Jumps)</h2>
+        <p>
+          Anchor links allow navigation within the same page, perfect for long
+          documents, tables of contents, and quick navigation.
+        </p>
+
+        <article>
+          <h3>Quick Navigation Menu</h3>
+          <p>Jump to different sections of this page:</p>
+          <ul>
+            <li><a href="#internal-links">📂 Internal Links Section</a></li>
+            <li><a href="#external-links">🌐 External Links Section</a></li>
+            <li><a href="#special-links">✨ Special Links Section</a></li>
+            <li>
+              <a href="#navigation-patterns">🧭 Navigation Patterns Section</a>
+            </li>
+            <li><a href="#accessibility">♿ Accessibility Section</a></li>
+            <li><a href="#footer">👇 Footer Section</a></li>
+          </ul>
+        </article>
+
+        <article>
+          <h3>Table of Contents Example</h3>
+          <p>For a tutorial or documentation, you might create:</p>
+          <ol>
+            <li><a href="#introduction">Introduction to Links</a></li>
+            <li><a href="#basic-syntax">Basic Link Syntax</a></li>
+            <li><a href="#link-types">Types of Links</a></li>
+            <li><a href="#best-practices">Best Practices</a></li>
+            <li><a href="#examples">Real-World Examples</a></li>
+            <li><a href="#conclusion">Conclusion</a></li>
+          </ol>
+        </article>
+
+        <article id="back-to-top-demo">
+          <h3>Back to Top Links</h3>
+          <p>
+            Long pages often include "back to top" links for user convenience:
+          </p>
+          <a href="#main-content">↑ Back to Top</a>
+        </article>
+      </section>
+
+      <!-- Special Links Section -->
+      <section id="special-links">
+        <h2>✨ Special Purpose Links</h2>
+        <p>
+          HTML supports various special link types for enhanced user interaction
+          and functionality.
+        </p>
+
+        <article>
+          <h3>Email Links</h3>
+          <p>Email links automatically open the user's default email client:</p>
+          <ul>
+            <li>
+              <a href="mailto:contact@ezsnipet.com" class="email-link"
+                >Basic Email Contact</a
+              >
+            </li>
+            <li>
+              <a
+                href="mailto:support@ezsnipet.com?subject=Tutorial%20Help&body=Hello,%20I%20need%20help%20with..."
+                class="email-link"
+                >Email with Subject and Body</a
+              >
+            </li>
+            <li>
+              <a
+                href="mailto:team@ezsnipet.com?cc=manager@ezsnipet.com&bcc=archive@ezsnipet.com"
+                class="email-link"
+                >Email with CC and BCC</a
+              >
+            </li>
+            <li>
+              <a
+                href="mailto:feedback@ezsnipet.com?subject=Day%209%20Feedback"
+                class="email-link"
+                >Send Feedback</a
+              >
+            </li>
+          </ul>
+        </article>
+
+        <article>
+          <h3>Telephone Links</h3>
+          <p>Phone links trigger calling functionality on mobile devices:</p>
+          <ul>
+            <li>
+              <a href="tel:+1234567890" class="phone-link"
+                >Call Main Office: (123) 456-7890</a
+              >
+            </li>
+            <li>
+              <a href="tel:+1-800-555-0123" class="phone-link"
+                >Toll-Free Support: 1-800-555-0123</a
+              >
+            </li>
+            <li>
+              <a href="tel:+44-20-7946-0958" class="phone-link"
+                >International: +44 20 7946 0958</a
+              >
+            </li>
+          </ul>
+        </article>
+
+        <article>
+          <h3>SMS Links</h3>
+          <p>SMS links open messaging apps on mobile devices:</p>
+          <ul>
+            <li><a href="sms:+1234567890">Send SMS to (123) 456-7890</a></li>
+            <li>
+              <a href="sms:+1234567890?body=Hello%20from%20EZsnipet%20tutorial!"
+                >Send Pre-filled SMS</a
+              >
+            </li>
+          </ul>
+        </article>
+
+        <article>
+          <h3>Download Links</h3>
+          <p>Download links prompt users to save files locally:</p>
+          <ul>
+            <li>
+              <a
+                href="files/html-cheatsheet.pdf"
+                download="HTML_Cheatsheet.pdf"
+                class="download-link"
+                >HTML Cheat Sheet (PDF, 2.3MB)</a
+              >
+            </li>
+            <li>
+              <a href="files/sample-code.zip" download class="download-link"
+                >Sample Code Archive (ZIP, 1.1MB)</a
+              >
+            </li>
+            <li>
+              <a
+                href="files/tutorial-slides.pptx"
+                download="Day_9_Slides.pptx"
+                class="download-link"
+                >Tutorial Slides (PowerPoint, 5.7MB)</a
+              >
+            </li>
+          </ul>
+          <p>
+            <em
+              >Note: These are example download links for demonstration
+              purposes.</em
+            >
+          </p>
+        </article>
+
+        <article>
+          <h3>Social Media and App Links</h3>
+          <ul>
+            <li>
+              <a
+                href="https://twitter.com/intent/tweet?text=Learning%20HTML%20links%20with%20EZsnipet!"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Share on Twitter</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://www.facebook.com/sharer/sharer.php?u=https://example.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Share on Facebook</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://www.linkedin.com/sharing/share-offsite/?url=https://example.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Share on LinkedIn</a
+              >
+            </li>
+          </ul>
+        </article>
+      </section>
+
+      <!-- Navigation Patterns Section -->
+      <section id="navigation-patterns">
+        <h2>🧭 Navigation Patterns</h2>
+        <p>Learn common navigation patterns used in professional websites.</p>
+
+        <article>
+          <h3>Button-Style Links</h3>
+          <p>Style links to look like buttons for calls-to-action:</p>
+          <div style="margin: 20px 0">
+            <a href="#special-links" class="button-link">Get Started</a>
+            <a
+              href="mailto:contact@ezsnipet.com"
+              class="button-link"
+              style="background-color: #28a745"
+              >Contact Us</a
+            >
+            <a
+              href="files/guide.pdf"
+              download
+              class="button-link"
+              style="background-color: #ffc107; color: #212529"
+              >Download Guide</a
+            >
+          </div>
+        </article>
+
+        <article>
+          <h3>Image Links</h3>
+          <p>Images can be clickable links too:</p>
+          <a
+            href="../DAY - 8 [HTML List]/index.html"
+            title="Previous lesson: HTML Lists"
+          >
+            <img
+              src="https://via.placeholder.com/200x100/007bff/ffffff?text=Previous+Lesson"
+              alt="Go to HTML Lists lesson"
+              style="border: 2px solid #007bff; border-radius: 8px"
+            />
+          </a>
+          <p><em>Click the image above to go to the previous lesson!</em></p>
+        </article>
+
+        <article>
+          <h3>Pagination Navigation</h3>
+          <nav aria-label="Tutorial pagination" class="pagination">
+            <a href="../DAY - 8 [HTML List]/index.html" rel="prev"
+              >← Previous</a
+            >
+            <a href="../DAY - 7 [HTML TEXT]/index.html">7</a>
+            <a href="../DAY - 8 [HTML List]/index.html">8</a>
+            <a href="#" aria-current="page">9</a>
+            <a href="#" rel="next">10</a>
+            <a href="#" rel="next">Next →</a>
+          </nav>
+        </article>
+
+        <article>
+          <h3>Footer Navigation</h3>
+          <p>Footer links help users find important pages:</p>
+          <nav aria-label="Footer navigation">
+            <ul style="display: flex; gap: 15px; list-style: none; padding: 0">
+              <li><a href="#internal-links">Privacy Policy</a></li>
+              <li><a href="#external-links">Terms of Service</a></li>
+              <li><a href="#special-links">Contact</a></li>
+              <li><a href="#navigation-patterns">Sitemap</a></li>
+              <li><a href="#accessibility">Accessibility</a></li>
+            </ul>
+          </nav>
+        </article>
+      </section>
+
+      <!-- Accessibility Section -->
+      <section id="accessibility">
+        <h2>♿ Link Accessibility and Best Practices</h2>
+        <p>
+          Creating accessible links ensures all users can navigate your website
+          effectively.
+        </p>
+
+        <article>
+          <h3>Descriptive Link Text Examples</h3>
+
+          <h4>❌ Poor Link Text:</h4>
+          <ul>
+            <li>
+              <a href="#accessibility">Click here</a> (doesn't describe
+              destination)
+            </li>
+            <li>
+              <a href="#accessibility">Read more</a> (generic and unclear)
+            </li>
+            <li>
+              <a href="#accessibility">Link</a> (completely uninformative)
+            </li>
+          </ul>
+
+          <h4>✅ Good Link Text:</h4>
+          <ul>
+            <li>
+              <a
+                href="https://developer.mozilla.org/en-US/docs/Web/Accessibility"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Learn about web accessibility on MDN</a
+              >
+            </li>
+            <li>
+              <a href="files/accessibility-guidelines.pdf" download
+                >Download Web Accessibility Guidelines (PDF, 1.8MB)</a
+              >
+            </li>
+            <li>
+              <a href="mailto:accessibility@ezsnipet.com"
+                >Contact our accessibility team</a
+              >
+            </li>
+          </ul>
+        </article>
+
+        <article>
+          <h3>Link Context and Information</h3>
+          <p>Provide context about what users can expect:</p>
+          <ul>
+            <li>
+              <a
+                href="https://www.youtube.com/watch?v=example"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Watch HTML tutorial video on YouTube (opens in new tab)</a
+              >
+            </li>
+            <li>
+              <a href="files/large-document.pdf" download
+                >Annual Report 2024 (PDF, 15.2MB)</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://external-survey.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Take our feedback survey (external site)</a
+              >
+            </li>
+            <li>
+              <a href="tel:+1234567890"
+                >Call customer support: (123) 456-7890</a
+              >
+            </li>
+          </ul>
+        </article>
+
+        <article>
+          <h3>Keyboard Navigation</h3>
+          <p>
+            All links should be accessible via keyboard navigation. Try pressing
+            <kbd>Tab</kbd> to navigate through the links on this page, and
+            <kbd>Enter</kbd> to activate them.
+          </p>
+
+          <h4>Focus Management:</h4>
+          <ul>
+            <li>
+              <a href="#main-content">Skip to main content</a> (already at top
+              of page)
+            </li>
+            <li>
+              <a href="#internal-links">Jump to internal links section</a>
+            </li>
+            <li><a href="#footer">Jump to footer</a></li>
+          </ul>
+        </article>
+
+        <article>
+          <h3>Screen Reader Considerations</h3>
+          <p>Screen readers announce links in special ways. Consider:</p>
+          <ul>
+            <li>
+              <strong>Link lists:</strong> Screen readers can list all links on
+              a page
+            </li>
+            <li>
+              <strong>Context:</strong> Link text should make sense out of
+              context
+            </li>
+            <li><strong>Landmarks:</strong> Use proper navigation landmarks</li>
+            <li>
+              <strong>ARIA labels:</strong> Add additional context when needed
+            </li>
+          </ul>
+
+          <p>Example with ARIA label:</p>
+          <a
+            href="https://github.com/ezsnipet/tutorials"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="View EZsnipet tutorials on GitHub (opens in new tab)"
+          >
+            GitHub Repository
+          </a>
+        </article>
+      </section>
+
+      <!-- Real-World Examples Section -->
+      <section id="examples">
+        <h2>🌟 Real-World Link Examples</h2>
+        <p>See how links are used in real website scenarios.</p>
+
+        <article>
+          <h3>E-commerce Product Links</h3>
+          <div
+            style="
+              border: 1px solid #ddd;
+              padding: 15px;
+              border-radius: 8px;
+              margin: 10px 0;
+            "
+          >
+            <h4><a href="product-details.html">MacBook Pro 14-inch</a></h4>
+            <p>Apple M2 Pro chip, 16GB RAM, 512GB SSD</p>
+            <p><strong>$1,999.00</strong></p>
+            <div>
+              <a href="product-details.html" class="button-link"
+                >View Details</a
+              >
+              <a
+                href="add-to-cart.html"
+                class="button-link"
+                style="background-color: #28a745"
+                >Add to Cart</a
+              >
+              <a href="wishlist.html">♡ Add to Wishlist</a>
+            </div>
+          </div>
+        </article>
+
+        <article>
+          <h3>Blog Post Navigation</h3>
+          <div
+            style="
+              border: 1px solid #ddd;
+              padding: 15px;
+              border-radius: 8px;
+              margin: 10px 0;
+            "
+          >
+            <h4><a href="blog-post.html">10 Tips for Better HTML Code</a></h4>
+            <p>
+              Published on <time datetime="2025-06-01">June 1, 2025</time> by
+              <a href="author-profile.html">John Developer</a>
+            </p>
+            <p>
+              Learn essential techniques for writing clean, semantic HTML that
+              works across all browsers and devices...
+            </p>
+            <div>
+              <a href="blog-post.html">Read Full Article</a> |
+              <a href="blog-category.html">More HTML Tips</a> |
+              <a
+                href="mailto:?subject=Check%20out%20this%20article&body=I%20found%20this%20great%20article%20about%20HTML..."
+                >Share via Email</a
+              >
+            </div>
+          </div>
+        </article>
+
+        <article>
+          <h3>Contact Information Section</h3>
+          <div
+            style="
+              border: 1px solid #ddd;
+              padding: 15px;
+              border-radius: 8px;
+              margin: 10px 0;
+            "
+          >
+            <h4>Get in Touch</h4>
+            <p>
+              <strong>Office Address:</strong><br />
+              123 Web Development Lane<br />
+              Tech City, TC 12345
+            </p>
+
+            <p><strong>Contact Methods:</strong></p>
+            <ul>
+              <li>
+                <a href="tel:+1234567890" class="phone-link"
+                  >Phone: (123) 456-7890</a
+                >
+              </li>
+              <li>
+                <a href="mailto:hello@ezsnipet.com" class="email-link"
+                  >Email: hello@ezsnipet.com</a
+                >
+              </li>
+              <li><a href="sms:+1234567890">Text: (123) 456-7890</a></li>
+              <li>
+                <a
+                  href="https://maps.google.com/?q=123+Web+Development+Lane,+Tech+City"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >View on Google Maps</a
+                >
+              </li>
+            </ul>
+
+            <p>
+              <strong>Office Hours:</strong><br />
+              Monday - Friday: 9:00 AM - 6:00 PM<br />
+              Saturday: 10:00 AM - 4:00 PM<br />
+              Sunday: Closed
+            </p>
+          </div>
+        </article>
+      </section>
+    </main>
+
+    <aside>
+      <h3>🔗 Quick Reference</h3>
+      <dl>
+        <dt>Basic Link</dt>
+        <dd><code>&lt;a href="page.html"&gt;Link Text&lt;/a&gt;</code></dd>
+
+        <dt>External Link</dt>
+        <dd>
+          <code
+            >&lt;a href="https://example.com" target="_blank" rel="noopener
+            noreferrer"&gt;External&lt;/a&gt;</code
+          >
+        </dd>
+
+        <dt>Email Link</dt>
+        <dd>
+          <code>&lt;a href="mailto:email@example.com"&gt;Email&lt;/a&gt;</code>
+        </dd>
+
+        <dt>Phone Link</dt>
+        <dd><code>&lt;a href="tel:+1234567890"&gt;Call&lt;/a&gt;</code></dd>
+
+        <dt>Anchor Link</dt>
+        <dd><code>&lt;a href="#section"&gt;Jump to Section&lt;/a&gt;</code></dd>
+
+        <dt>Download Link</dt>
+        <dd>
+          <code>&lt;a href="file.pdf" download&gt;Download&lt;/a&gt;</code>
+        </dd>
+      </dl>
+
+      <h3>💡 Remember</h3>
+      <ul>
+        <li>Use <strong>descriptive link text</strong></li>
+        <li>Add <strong>security attributes</strong> for external links</li>
+        <li>Indicate <strong>file types and sizes</strong></li>
+        <li>Test on <strong>mobile devices</strong></li>
+        <li>Consider <strong>accessibility</strong> for all users</li>
+      </ul>
+    </aside>
+
+    <footer id="footer">
+      <hr />
+      <h3>🎓 Tutorial Navigation</h3>
+      <nav aria-label="Tutorial series navigation">
+        <ul
+          style="
+            list-style: none;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+            padding: 0;
+          "
+        >
+          <li>
+            <a href="../DAY - 5 [First Webpage]/index.html"
+              >Day 5: First Webpage</a
+            >
+          </li>
+          <li>
+            <a href="../DAY - 6 [HTML Structure]/index.html"
+              >Day 6: HTML Structure</a
+            >
+          </li>
+          <li>
+            <a href="../DAY - 7 [HTML TEXT]/index.html">Day 7: HTML Text</a>
+          </li>
+          <li>
+            <a href="../DAY - 8 [HTML List]/index.html">Day 8: HTML Lists</a>
+          </li>
+          <li><strong>Day 9: HyperLinks</strong></li>
+        </ul>
+      </nav>
+
+      <p>
+        &copy; 2025 EZsnipet Tutorial Series. Created for educational purposes.
+      </p>
+      <p>
+        <small>
+          This page demonstrates comprehensive HTML hyperlink usage with
+          real-world examples and accessibility best practices.
+          <time datetime="2025-06-05">Last updated: June 5, 2025</time>
+        </small>
+      </p>
+
+      <nav aria-label="Footer links">
+        <a href="#main-content">↑ Back to Top</a> |
+        <a href="../DAY - 8 [HTML List]/index.html">← Previous Lesson</a> |
+        <a href="mailto:feedback@ezsnipet.com">Send Feedback</a> |
+        <a href="tel:+1234567890">Contact Support</a>
+      </nav>
+    </footer>
+  </body>
+</html>
