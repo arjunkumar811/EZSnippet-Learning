@@ -529,3 +529,12 @@ Links are the threads that weave the World Wide Web together. Let's create meani
 Remember: Good links don't just connect pages - they connect people to information! 🔗✨
 
 ---
+<<<<<<< HEAD
+=======
+
+## 🔗 Next Up: DAY - 10 [HTML IDs]
+
+Next, we'll explore HTML IDs - unique identifiers that allow you to target specific elements for styling, JavaScript manipulation, and create anchor links for navigation!
+
+---
+>>>>>>> bdbc984 (Added Code)
