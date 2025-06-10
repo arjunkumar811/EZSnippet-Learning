@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Self-Closing Tags</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        line-height: 1.6;
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 20px;
+      }
+      .example {
+        border: 1px solid #ddd;
+        padding: 15px;
+        margin-bottom: 20px;
+        border-radius: 5px;
+      }
+      .code {
+        background-color: #f4f4f4;
+        padding: 10px;
+        border-radius: 5px;
+        font-family: monospace;
+      }
+      hr {
+        border: 2px solid #3498db;
+        margin: 30px 0;
+      }
+      img {
+        max-width: 100%;
+        height: auto;
+        display: block;
+        margin: 20px 0;
+      }
+      form {
+        margin: 20px 0;
+      }
+      input {
+        padding: 8px;
+        margin: 5px 0;
+        border: 1px solid #ddd;
+        border-radius: 4px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Self-Closing HTML Tags</h1>
+
+    <p>
+      Self-closing tags (also known as void elements) are HTML elements that
+      don't require closing tags. Here are some examples:
+    </p>
+
+    <hr />
+
+    <div class="example">
+      <h2>1. Image Tag &lt;img&gt;</h2>
+      <div class="code">&lt;img src="image.jpg" alt="Sample image"&gt;</div>
+      <p>Result:</p>
+      <img
+        src="https://via.placeholder.com/400x200?text=Example+Image"
+        alt="Sample placeholder image"
+      />
+    </div>
+
+    <div class="example">
+      <h2>2. Line Break &lt;br&gt;</h2>
+      <div class="code">
+        &lt;p&gt;This is a line of text.&lt;br&gt;This text appears on a new
+        line.&lt;/p&gt;
+      </div>
+      <p>Result:</p>
+      <p>This is a line of text.<br />This text appears on a new line.</p>
+    </div>
+
+    <div class="example">
+      <h2>3. Horizontal Rule &lt;hr&gt;</h2>
+      <div class="code">&lt;hr&gt;</div>
+      <p>Result:</p>
+      <hr />
+    </div>
+
+    <div class="example">
+      <h2>4. Input Fields &lt;input&gt;</h2>
+      <div class="code">
+        &lt;input type="text" placeholder="Enter your name"&gt;<br />&lt;input
+        type="password" placeholder="Enter password"&gt;<br />&lt;input
+        type="checkbox"&gt; Remember me
+      </div>
+      <p>Result:</p>
+      <form>
+        <input type="text" placeholder="Enter your name" /><br />
+        <input type="password" placeholder="Enter password" /><br />
+        <input type="checkbox" /> Remember me
+      </form>
+    </div>
+
+    <div class="example">
+      <h2>5. Meta Tags &lt;meta&gt;</h2>
+      <div class="code">
+        &lt;meta name="description" content="This is a description of the
+        page"&gt;<br />&lt;meta name="viewport" content="width=device-width,
+        initial-scale=1.0"&gt;
+      </div>
+      <p>
+        Result: (Not visible, but these are in the head section of this
+        document)
+      </p>
+    </div>
+
+    <div class="example">
+      <h2>6. Link Tag &lt;link&gt;</h2>
+      <div class="code">&lt;link rel="stylesheet" href="styles.css"&gt;</div>
+      <p>Result: (Not visible, but used to link external stylesheets)</p>
+    </div>
+
+    <h2>Practice Exercise</h2>
+    <p>
+      Try creating your own HTML page that uses at least 3 different
+      self-closing tags in meaningful ways.
+    </p>
+
+    <hr />
+
+    <h3>Notes:</h3>
+    <ul>
+      <li>
+        In HTML5, the trailing slash is optional:
+        <code>&lt;img src="image.jpg"&gt;</code>
+      </li>
+      <li>
+        In XHTML, the trailing slash is required:
+        <code>&lt;img src="image.jpg" /&gt;</code>
+      </li>
+      <li>Always include necessary attributes (like src and alt for images)</li>
+    </ul>
+  </body>
+</html>
