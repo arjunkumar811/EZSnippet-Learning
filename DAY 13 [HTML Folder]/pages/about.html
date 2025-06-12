@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About Us - HTML Folder Structure</title>
+    <!-- Notice how we link to CSS from a subfolder - we need to go up one level "../" -->
+    <link rel="stylesheet" href="../assets/css/style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>About Us</h1>
+      <nav>
+        <ul>
+          <!-- Notice how we link back to the root folder using "../" -->
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section>
+        <h2>About Our Website</h2>
+        <p>
+          This page demonstrates how to link between files in different folders.
+        </p>
+        <p>
+          Notice how we use "../" to go up one directory level when linking to
+          files in parent folders.
+        </p>
+
+        <!-- Notice how we link to images from a subfolder -->
+        <img src="../assets/images/about-us.jpg" alt="About Us Image" />
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2025 HTML Folder Structure Example</p>
+    </footer>
+
+    <!-- Notice how we link to JavaScript from a subfolder -->
+    <script src="../assets/js/script.js"></script>
+  </body>
+</html>

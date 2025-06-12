@@ -1,0 +1,46 @@
+# Folder Structure Explanation
+
+This example demonstrates a common web project folder structure:
+
+```
+DAY 13 [HTML Folder]/
+├── index.html              # Main homepage
+├── pages/                  # Folder for other HTML pages
+│   ├── about.html          # About page
+│   ├── services.html       # Services page
+│   └── contact.html        # Contact page
+├── assets/                 # Contains all static assets
+│   ├── css/                # CSS stylesheets
+│   │   └── style.css       # Main stylesheet
+│   ├── js/                 # JavaScript files
+│   │   └── script.js       # Main JavaScript file
+│   └── images/             # Image files
+│       └── (image files)   # Various images used in the site
+└── README.md               # Project documentation
+```
+
+## Important Concepts Demonstrated
+
+1. **Relative Paths**: 
+   - From root to subdirectories: `assets/css/style.css`
+   - From subdirectories to root: `../index.html`
+   - Between subdirectories: `../assets/css/style.css`
+
+2. **Folder Organization Benefits**:
+   - Separation of concerns
+   - Easier maintenance
+   - Better scalability
+   - Cleaner project structure
+
+3. **Best Practices**:
+   - Keep related files together
+   - Use consistent naming conventions
+   - Organize by file type and function
+   - Keep paths as short as possible
+
+4. **Common Folder Names**:
+   - `assets`: For all static files
+   - `css`: For stylesheets
+   - `js`: For JavaScript files
+   - `images`: For image files
+   - `pages`: For HTML pages other than the homepage
