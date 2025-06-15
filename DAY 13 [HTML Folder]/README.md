@@ -17,6 +17,8 @@ This section covers how to organize HTML files within folders for better website
 2. Set up navigation between pages in different folders
 3. Implement resource organization (images, CSS, JavaScript)
 
+Day 14 is comming soon
+
 ## Resources
 
 - [MDN Web Docs on File Structure](https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/Dealing_with_files)
